@@ -1,0 +1,285 @@
+﻿CHAPTER 2  Introduction to Java Applications: Input/Output and Operators
+
+Exercises
+
+2.7
+    a) Comments are used to document a program and improve its readability.
+    b) A decision can be made in a Java program with an if statement.
+    c) Calculations are normally performed by assignment statements.
+    d) The arithmetic operators with the same precedence as multiplication are division and remainder.
+    e) When parentheses in an arithmetic expression are nested, the set innermost of parentheses is evaluated first.
+    f) A location in the computer’s memory that may contain different values at various times throughout the execution of a program is called a variable.
+
+2.8
+    a) System.out.print(“Enter an integer”)
+    b) a = b * c
+    c) //This program performs a sample payroll calculation.
+
+2.9
+    a) False
+    b) True
+    c) True
+    d) False
+
+2.10
+    a) x = 2
+    b) Value of 2 + 2 is 4
+    c) x = 
+    d) 5 = 5
+
+2.11
+a) and d)
+
+2.12
+a), d) and e)
+
+2.13
+    a) +, *, /, -    x becomes 15
+    b) %, +, *, -, /    x becomes 3
+    c) /, *, +, *    x becomes 324
+
+2.14
+	public class NumDisplay{
+		public static void main(String[] args){
+			//Using println
+			System.out.println(“1 2 3 4”);
+			//Using print
+			System.out.print(“1 2 3 4\n”);
+			//Using printf
+			System.out.printf(“%d %d %d %d”, 1, 2, 3, 4);
+		}
+	}
+
+2.15
+	//Program that gives sum, product, quotient, and difference when user enters 2 numbers
+	import java.util.Scanner;
+
+	public class Calculator{
+		public static void main(Strings[] args){
+			Scanner input = new Scanner(System.in);
+			
+			int num1;
+			int num2;
+			int sum, product, difference;
+			float quotient;
+			System.out.print("Enter first integer: "); 
+			num1 = input.nextInt(); 
+			System.out.print("Enter second integer: "); 
+			num2 = input.nextInt(); 
+
+			sum = num1 + num2;
+			System.out.printf("Sum is %d%n", sum); 
+			product = num1 * num2;
+			System.out.printf(“Product is %d%n”, product);
+			difference = num1 – num2;
+			System.out.printf(“Difference is %d%n”, difference);
+			quotient = num1 / num2;
+			System.out.printf(“Quotient is %f”, quotient);
+		}
+	}
+
+2.16
+	//Java program to compare two integers
+	import java.util.Scanner;
+	public class IntCompare{
+		public static void main(String [] args){
+			
+			Scanner input = new Scanner(System.in);
+			
+			int num1, num2;
+			System.out.print("Enter first integer: "); 
+			num1 = input.nextInt(); 
+			System.out.print("Enter second integer: "); 
+			num2 = input.nextInt(); 
+			
+			if (num1 > num2) 
+				{System.out.println(num1 + “is larger.”);}
+			else if (num2 > num1)
+				{System.out.println(num2 + “is larger”);}
+			else{System.out.println(“These numbers are equal.”);}
+		}
+	}
+
+2.17
+
+	import java.util.Scanner;
+
+		public class Calculator{
+			public static void main(Strings[] args){
+				Scanner input = new Scanner(System.in);
+			
+				int num1, num2, num3;
+				int sum, product, difference;
+				float quotient;
+				System.out.println("Enter first integer: "); 
+				num1 = input.nextInt(); 
+				System.out.println("Enter second integer: "); 
+				num2 = input.nextInt(); 
+				System.out.println;
+				num3  = input.nextInt();
+				
+				//Sum
+				System.out.println("Sum is ",  + (num1+num2+num3)); 
+				//Average
+				System.out.println(“Average is ” + ((num1+num2+num3)/3));
+				//Product
+				System.out.println(“Product is ” + (num1*num2*num3));
+				//Largest number
+				if (num1 > num2&&num3){System.out.println(num1 + “ the largest”);}
+				else if (num2 > num1&&num3){System.out.println(num2 + “ the largest”);}
+				else (num3 > num2&&num1){System.out.println(num3 + “ the largest”);}
+				//Smallest number
+				if (num1 < num2&&num3){System.out.println(num1 + “ the smallest”);}
+				elseif (num2 < num1&&num3){System.out.println(num2 + “ the largest”);}
+				else (num1 < num2&&num1){System.out.println(num3 + “ the largest”);}
+			}
+		}
+
+2.18
+	public class Shapes {
+    		public static void main (String [] args) {
+         
+    		    System.out.print ("*********      ***        *            * \n");
+    		    System.out.print ("*              *    *     *      ***       * * \n");
+    		    System.out.print ("*              *   *       *   *****    *   * \n");
+    		    System.out.print ("*              *   *       *       *       *     * \n");
+    		    System.out.print ("*              *   *       *       *      *       * \n");
+    		    System.out.print ("*              *   *       *       *       *     * \n");
+    		    System.out.print ("*              *   *       *       *        *   * \n");
+    		    System.out.print ("*              *    *     *        *         * * \n");
+    		    System.out.print ("*********      ***         *          * \n");
+    		}
+	}
+
+2.19
+	*
+	**
+	***
+	****
+	*****
+2.20
+	*
+	***
+	*****
+	****
+	**
+2.21
+	***************
+2.22
+	****
+	*****
+	******
+2.23
+	*
+	***
+	*****
+2.28
+	public class CircleCalculations{
+		public static void main(Strings[] args){
+			Scanner input = new Scanner(System.in);
+			int r;
+			System.out.println(“Enter circle radius: ”);
+			r = input.nextInt;
+			System.out.println(“Diameter is ” + (r *2));
+			System.out.println(“Area is ” + (r**2 * (Math.PI)));
+			System.out.println(“Circumference is ” + (r *2 * (Math.PI)));
+	}}
+
+2.30
+	public class SqCubeTbl{
+    		public static void main (String [] args) {
+ 
+ 		System.out.println ("Number   Square   Cube");
+ 		       System.out.printf ("%d        %d        %d\n", 0, (0 * 0), (0 * 0 * 0));
+ 		       System.out.printf ("%d        %d        %d\n", 1, (1 * 1), (1 * 1 * 1));
+ 		       System.out.printf ("%d        %d        %d\n", 2, (2 * 2), (2 * 2 * 2));
+ 		       System.out.printf ("%d        %d        %d\n", 3, (3 * 3), (3 * 3 * 3));
+ 		       System.out.printf ("%d        %d       %d\n", 4, (4 * 4), (4 * 4 * 4));
+ 		       System.out.printf ("%d        %d       %d\n", 5, (5 * 5), (5 * 5 * 5));
+ 		       System.out.printf ("%d        %d       %d\n", 6, (6 * 6), (6 * 6 * 6));
+ 		       System.out.printf ("%d        %d       %d\n", 7, (7 * 7), (7 * 7 * 7));
+ 		       System.out.printf ("%d        %d       %d\n", 8, (8 * 8), (8 * 8 * 8));
+ 		       System.out.printf ("%d        %d       %d\n", 9, (9 * 9), (9 * 9 * 9));
+ 		       System.out.printf ("%d       %d      %d\n", 10, (10 * 10), (10 * 10 * 10));
+	}}
+2.32
+//Program that displays the number of Positive, Negative and Zero values from Five Numbers
+
+import java.util.Scanner;
+
+public class Quantifier{
+
+	public static void main(String[] args) {
+
+		Scanner value = new Scanner (System.in);
+
+		int num1;
+		int num2;
+		int num3;
+		int num4;
+		int num5;
+		//Reset Number of positive, negative and zeros
+		int numPositive = 0;
+		int numZero = 0;
+		int numNegative = 0;
+		
+		System.out.print ("Enter your first number: ");
+		num1 = value.nextInt();
+	
+		System.out.print ("Enter your second number: ");
+		num2 = value.nextInt();
+
+		System.out.print ("Enter your third number: ");
+		num3 = value.nextInt();
+
+		System.out.print ("Enter your fourth number: ");
+		num4 = value.nextInt();
+
+		System.out.print ("Enter your fifth number: ");
+		num5 = value.nextInt();
+		//Count Positve Numbers
+		if (num1 > 0)
+		 numPositive = numPositive + 1;
+		if (num2 > 0)
+		numPositive = numPositive + 1;
+		if (num3 > 0)
+ 		numPositive = numPositive + 1;
+		 if (num4 > 0)
+		 numPositive = numPositive + 1;
+		if (num5 > 0)
+		  numPositive = numPositive + 1;
+
+		//Count Negative Numbers
+
+		if (num1 < 0)
+		 numNegative = numNegative + 1;
+		if (num2 > 0)
+		numNegative = numNegative + 1;
+		if (num3 > 0)
+		 numNegative = numNegative + 1;
+		if (num4 > 0)
+		 numNegative = numNegative + 1;
+		if (num5 > 0)
+		 numNegative = numNegative + 1;
+
+		//Count Zeros
+
+		if (num1 == 0)
+		 numZero = numZero + 1;
+		if (num2 == 0)
+		 numZero = numZero + 1;
+		if (num3 == 0)
+		numZero = numZero + 1;
+		if (num4 == 0)
+		 numZero = numZero + 1;
+		if (num5 == 0)
+		 numZero = numZero + 1;
+
+		System.out.println ("\n");
+		//Displays the number of Positive, Negative and Zeros
+
+		System.out.printf ("Positive numbers = %d\n", numPositive);
+		System.out.printf ("Negative numbers = %d\n", numNegative);
+		System.out.printf ("Zero numbers = %d\n", numZero);
+	}
+}

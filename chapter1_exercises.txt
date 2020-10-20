@@ -1,0 +1,37 @@
+﻿CHAPTER 1  Introduction to Computers, the Internet and Java
+Exercises
+1.4
+    a) The logical unit that receives information from outside the computer for use by the computer is the input unit.
+    b) The process of instructing the computer to solve a problem is called programming.
+    c) Assembly language is a type of computer language that uses English-like abbreviations for machine-language instructions is a logical unit that sends information which has already been processed by the computer to various devices so that it may be used outside the computer.
+    d) The output unit is a logical unit that sends information which has already been processed by the computer to various devices so that it may be used outside the computer.
+    e) The memory unit and secondary storage unit are logical units of the computer that retain information.
+    f) The arithmetic and logical unit is a logical unit of the computer that performs calculations.
+    g) The arithmetic and logical unit is a logical unit of the computer that makes logical decisions.
+    h) High level languages are most convenient to the programmer for writing programs quickly and easily.
+    i) The only language a computer can directly understand is that computer’s machine language.
+    j) The central processing unit is a logical unit of the computer that coordinates the activities of all the other logical units.
+
+1.5
+    a) The Java programming language is now used to develop large-scale enterprise applications, to enhance the functionality of web servers, to provide applications for consumer devices and for many other purposes.
+    b) C initially became widely known as the development language of the UNIX operating system.
+    c) The TCP ensures that messages, consisting of sequentially numbered pieces called bytes, were properly routed from sender to receiver, arrived intact and were assembled in the correct order.
+    d) The C++ programming language was developed by Bjarne Stroustrup in the early 1980s at Bell Laboratories.
+
+1.6
+    a) Java programs normally go through five phases creating a program, compiling a java program into bytecodes, loading the program into memory, bytecode verification and execution.
+    b) An IDE provides many tools that support the software development process, such as editors for writing and editing programs, debuggers for locating logic errors in programs, and many other features.
+    c) The command java invokes the JVM, which executes Java programs.
+    d) A virtual machine is a software application that simulates a computer, but hides the underlying operating system and hardware from the programs that interact with it.
+    e) The class loader takes the .class files containing the program’s bytecodes and transfers them to primary memory.
+    f) The bytecode verifier examines bytecodes to ensure that they’re valid.
+
+1.7
+The first compilation is where the Java compiler translates the Java source code into bytecode; the second where the Java Virtual Machine executes the bytecode.
+
+1.8
+Given a wrist watch as a class, attributes might be cost, shape, designer and color with behaviors such as setting current time and setting current date. An object of this class might be a Rolex wrist watch. The wrist watch class has attributes cost and designer and behaviors setting current time and setting alarm time by inheritance from the super class alarm clock.
+This wrist watch class been modeled using the object-oriented analysis design.
+Supposing a smart watch, syncing say an alarm across two watches will use the method to set an alarm on one of them. The attributes within it are said to be encapsulated. On syncing with the other watch(being another object), it gives the alarm at the desired time even though the underlying operations of the sync from the other watch(object) are hidden from it.
+An interface such as update time to local time will enable the user to use the watch and set alarms conveniently even when there is a change in time zone. 
+
