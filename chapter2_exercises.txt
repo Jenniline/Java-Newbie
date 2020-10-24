@@ -1,4 +1,4 @@
-﻿CHAPTER 2  Introduction to Java Applications: Input/Output and Operators
+CHAPTER 2  Introduction to Java Applications: Input/Output and Operators
 
 Exercises
 
